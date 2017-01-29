@@ -19,9 +19,12 @@ make(Some::class, ['foo' => 'some', 'bar' => 'other']);
 ```
 You can also bind closure:
 ```php
-app(Maker::class)->bind(Some::class, function(Maker $maker, $parameters){
-   $some = $maker->make(Some::class, $parameters);
-   $some->doSomeThing();
+use Illuminate\Contracts\Container\Container;
+use Greabock\Maker\Maker;
+
+app(Maker::class)->bind(Some::class, function(Container $container, $parameters){
+   $some = $container->make(Some::class);
+   $some->doSomeThing($parameters);
    return $some;
 });
 ```

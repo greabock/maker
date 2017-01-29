@@ -59,7 +59,7 @@ class Maker
     protected function build($concrete, $parameters)
     {
         if ($concrete instanceof Closure) {
-            return $concrete($this, $parameters);
+            return $concrete($this->container, $parameters);
         }
 
         $reflector = new ReflectionClass($concrete);
