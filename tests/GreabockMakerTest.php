@@ -124,7 +124,7 @@ class GreabockMakerTest extends PHPUnit_Framework_TestCase
      */
     public function testBindingResolutionExceptionMessage()
     {
-        $container = new Container;
-        $container->make('IMakerContractStub', []);
+        $maker = new Maker(new Container());
+        $maker->make('IMakerContractStub', []);
     }
 }
