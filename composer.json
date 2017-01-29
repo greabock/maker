@@ -1,0 +1,25 @@
+{
+    "name": "greabock/maker",
+    "description": "Laravel 5.4 maker",
+    "type": "library",
+    "require": {
+        "illuminate/container": "5.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Greabock\\Maker\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Greabock",
+            "email": "greabock@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~5.0"
+    },
+    "minimum-stability": "stable"
+}
