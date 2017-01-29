@@ -1,5 +1,5 @@
 {
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "greabock/maker",
     "description": "Laravel 5.4 maker",
     "type": "library",
