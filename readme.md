@@ -13,7 +13,7 @@ make(Some::class, ['foo' => 'some', 'bar' => 'other']);
 ```
 #Warning!
 
-This function similiar but not full compatible with old `App::make()`. 
+This function is similiar but isn't full compatible with old `App::make()`. 
 Contextual binding does not work when you build objects with Maker.
 
 
