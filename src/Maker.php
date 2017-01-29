@@ -24,7 +24,7 @@ class Maker
     /**
      * Maker constructor.
      *
-     * @param Application $app
+     * @param Container $app
      * @return void
      */
     public function __construct(Container $app)
