@@ -6,10 +6,18 @@
 After updating composer, add the `Greabock\Maker\MakerServiceProvider::class` to the `providers` array in config/app.php
 
 #Usage
-```
+```php
 app(Maker::class)->make(Some::class, ['foo' => 'some', 'bar' => 'other'])
 // or
 make(Some::class, ['foo' => 'some', 'bar' => 'other']);
+```
+You can also bind closure:
+```php
+app(Maker::class)->bind(Some::class, function(Maker $maker, $parameters){
+   $some = $maker->make(Some::class, $parameters);
+   $some->doSomeThing();
+   return $some;
+});
 ```
 #Warning!
 

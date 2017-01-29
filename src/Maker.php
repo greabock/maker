@@ -5,21 +5,20 @@ namespace Greabock\Maker;
 use Closure;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Contracts\Container\BindingResolutionException;
-use Illuminate\Contracts\Foundation\Application;
 use ReflectionClass;
 use ReflectionParameter;
 
 class Maker
 {
     /**
-     * @var Application
-     */
-    protected $container;
-
-    /**
      * @var array
      */
     protected $bindings = [];
+
+    /**
+     * @var Container
+     */
+    protected $container;
 
     /**
      * Maker constructor.
@@ -27,9 +26,9 @@ class Maker
      * @param Container $app
      * @return void
      */
-    public function __construct(Container $app)
+    public function __construct(Container $container)
     {
-        $this->app = $app;
+        $this->container = $container;
     }
 
     /**
