@@ -204,6 +204,6 @@ class Maker
      */
     protected function getFromContainer($abstract)
     {
-        return $this->app->make($abstract);
+        return $this->container->make($abstract);
     }
 }
