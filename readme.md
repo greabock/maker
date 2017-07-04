@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/greabock/maker.svg?branch=master)](https://travis-ci.org/greabock/maker)
 
 # Intention (DEPRICATED)
-*Depricated scince [v5.4.24](https://github.com/laravel/framework/pull/19178). Use method `makeWith()` instead*
+*Depricated scince [v5.4.24](https://github.com/laravel/framework/pull/19178). Use method `makeWith()` instead*   
 Laravel 5.4 had severely crippled DI container.
 > The container's make method no longer accepts a second array of parameters. This feature typically indicates a code smell. Typically, you can always construct the object in another way that is more intuitive.
 
